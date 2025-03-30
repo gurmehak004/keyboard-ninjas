@@ -1,0 +1,93 @@
+gift_id,gender,min_age,max_age,occasion,relationship,interests,hobby,name,gift,rating,link
+1,male,2,10,birthday,son,sports,building blocks,football,football,4,https://www.amazon.in/Nivia-Storm-Football-Size-White/dp/B00ICCYF0E?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=AXOGFIT0PZZ7G&th=1
+2,female,2,10,birthday,daughter,dolls,painting,art set,art set,5,https://www.amazon.in/art/s?k=art+set
+3,male,2,10,christmas,nephew,action figures,sports,sports equipment,sports equipment,3,https://www.flipkart.com/sports-agility-training-kit-complete-fitness-equipment-set-football/p/itm13f1977601825?pid=KITH2TPAGAVXQYXX&lid=LSTKITH2TPAGAVXQYXX2DEICN&marketplace=FLIPKART&cmpid=content_kit_8965229628_gmc
+4,female,2,10,christmas,niece,dress-up,dancing,ballet shoes,ballet shoes,5,https://www.amazon.in/Ballet-Shoes/s?k=Ballet+Shoes
+5,male,2,10,birthday,son,toys,building blocks,lego set,lego set,2,https://www.hamleys.in/product/Lego-Technic-OffRoad-Race-Buggy-Car-Toy-42164-Multicolour-For-Kids-Ages-8Y-219-Pieces--494348185?utm_source=adyogi&utm_medium=google-performancemax&utm_campaign=%7B%7Bcampaign.name%7D%7D--%7B%7Bcampaign.id%7D%7D--%7B%7Bcampaign_id%7D%7D-22364174097&utm_content=-&gad_source=1&gclid=Cj0KCQjwtJ6_BhDWARIsAGanmKfYKMcjkrbpovgoxmb94tAYr_0rS1PPxrZBdzY8WyiEfWcyMxRRJj4aAlISEALw_wcB
+6,female,2,10,birthday,daughter,dolls,singing,toy kitchen set,toy kitchen set,1,https://www.amazon.in/Toyshine-Luxury-Kitchen-Briefcase-Accessories/dp/B071J6R7XC?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1RDS4H20GYJMB
+7,male,2,10,christmas,nephew,action figures,sports,sports equipment,sports equipment,1,https://www.amazon.in/PLKOW-Equipment-Storage-Outdoor-Organizer/dp/B08JHPH5CX
+8,female,2,10,christmas,niece,dress-up,dancing,ballet shoes,ballet shoes,1,https://www.amazon.in/Daydance-Professional-Ballet-Pointe-Silicone/dp/B07F8KW5ZX?th=1&psc=1
+9,male,10,20,birthday,brother,gaming,video games,gaming console,gaming console,2,https://www.amazon.in/Abxylute-Handheld-Streaming-Compatible-PlayStation/dp/B0CG7GC21R
+10,female,10,20,birthday,sister,music,singing,karaoke machine,karaoke machine,2,https://www.indiamart.com/proddetail/karaoke-machine-for-kids-portable-bluetooth-speaker-with-wireless-microphone-2853401493548.html
+11,male,10,20,graduation,brother,coding,electronics,arduino kit,arduino kit,2,https://www.amazon.in/LAFVIN-Starter-Breadboard-Compatible-Arduino/dp/B09HBCMYTV
+12,female,10,20,graduation,sister,photography,travel,camera,camera,2,https://vlebazaar.in/Fujifilm-Instax-Mini-11-Instant-Camera-Sky-Blue-Gift-Box-with-10-Shots-1?srsltid=AfmBOop2_QMJ3PwAxgYkpWu11H81JV2ybIdDiW-jNizxKtqgBgyrlV1RVwo
+13,male,10,20,birthday,cousin,sports,video games,sports jersey,sports jersey,2,https://www.amazon.in/Clothings-Sports-Jersey-Polyester-T-Shirt/dp/B0D6G277RN?th=1&psc=1
+14,female,10,20,birthday,cousin,music,fashion,trendy cloth,trendy cloth,2,https://www.virgio.com/products/chic-serenade1-denim-flared-midi-dress?variant=49205972238633&country=IN&currency=INR&srsltid=AfmBOorY5UxdAO8mX5W4p1ibocgFv-oiccTvedL0avKAT0j2s5m5Peqz3BM
+15,male,10,20,birthday,brother,gaming,video games,gaming console,gaming console,2,https://in.store.asus.com/rog-ally-handheld-gaming-console.html
+16,female,10,20,birthday,sister,music,singing,karaoke machine,karaoke machine,2,https://www.indiamart.com/proddetail/karaoke-machine-for-kids-portable-bluetooth-speaker-with-wireless-microphone-2853401493548.html
+17,male,10,20,graduation,brother,coding,electronics,arduino kit,arduino kit,2,https://www.amazon.in/LAFVIN-Starter-Breadboard-Compatible-Arduino/dp/B09HBCMYTV
+18,female,10,20,graduation,sister,photography,travel,camera,camera,2,https://www.myntra.com/cameras/fujifilm/fujifilm-pink-instax-mini-12-instant-camera/28488440/buy
+19,male,20,30,anniversary,husband,technology,gadgets,smartwatch,smartwatch,3,https://www.flipkart.com/zwero-t55-smartwatch/p/itmc3203ab2c741c
+20,female,20,30,anniversary,wife,jewelry,fashion,necklace,necklace,3,https://silverpalace.in/view/product/simple-dual-tone-white-and-rosegold-necklace-set-for-womengirls/
+21,male,20,30,wedding,best friend,travel,adventure,backpack,backpack,3,https://www.amazon.in/Backpack-Premium-Business-Scratch-resistant-Multiple/dp/B0B6FNPN76?th=1
+22,female,20,30,baby shower,best friend,home decor,interior design,hamper,hamper,3,https://www.amazon.in/Greetings-Year-Ending-Chocolates-innovative-year-ending/dp/B0BQ724XHL
+23,male,20,30,birthday,boyfriend,gaming,gadgets,headset,headset,3,https://www.flipkart.com/daemon-cat-kids-bluetooth-headphones-girls-foldable-headset-microphone-wired/p/itm64890f6c2f5a9
+24,female,20,30,birthday,girlfriend,makeup,fashion,makeup kit,makeup kit,3,https://www.jiomart.com/p/beauty/fashion-colour-proffessional-makeup-kit-fc6323-01-393-1-gm/591225351
+25,male,20,30,housewarming,friend,home decor,plants,potted plant,potted plant,3,https://www.amazon.in/Flora-Planet-Potted-Plants-Artificial/dp/B0D9MKMJLD?th=1
+26,female,20,30,housewarming,friend,cooking,home decor,cookbook,cookbook,3,https://www.amazon.in/Tastes-Better-Scratch-Cookbook-Everyday/dp/0578335867
+27,male,20,30,valentine's day,boyfriend,gaming,chocolate,video game,video game,3,https://www.amazon.in/Elevea-WARRANTY-Handheld-Station-Console/dp/B0D2B5H51H
+28,female,20,30,valentine's day,girlfriend,chocolate,flowers,perfume,perfume,3,https://www.amazon.in/Scentice-Homme-Parfum-Lasting-Perfume/dp/B07QC6DDXK
+29,male,20,30,anniversary,husband,technology,gadgets,smartwatch,smartwatch,3,https://www.titan.co.in/product/titan-smart-watch-amoled-4.97-cm-%7C-410x502-pixels-%7C-always-on-%7C-singlesync-bt-%7C-fast-charging-%7C-ai-assistant-%7C-ip68-%7C-many-styles-90188ap01.html
+30,female,20,30,anniversary,wife,jewelry,fashion,necklace,necklace,3,https://www.glamira.in/glamira-pendant-elsie.html
+31,male,20,30,wedding,best friend,travel,adventure,backpack,backpack,3,https://www.nytimes.com/wirecutter/reviews/best-school-backpack-for-high-school-and-college/
+32,female,20,30,wedding,best friend,home decor,interior design,vase,vase,3,https://www.myntra.com/vases/market99/market99-blue--white-textured-ceramic-flower-vase/23926106/buy
+33,male,20,30,birthday,boyfriend,gaming,gadgets,headset,headset,3,https://www.amazon.in/Ozeino-ZW1-RED-Gaming-Headset/dp/B0CCXDTNQ3
+34,female,20,30,birthday,girlfriend,makeup,fashion,makeup kit,makeup kit,3,https://www.facebook.com/groups/679941889134209/posts/2132948347166882/?_rdr
+35,male,30,40,birthday,father,travel,reading,book set,book set,4,https://www.amazon.in/Pack-Self-Help-Bookset-Adult/dp/8131928020
+36,female,30,40,birthday,mother,gardening,cooking,kitchen appliances,kitchen appliances,4,https://www.indiafilings.com/learn/gst-rate-and-hsn-code-for-mechanical-and-electrical-appliances/
+37,male,30,40,father's day,father,tools,diy,tool set,tool set,4,https://www.indiamart.com/proddetail/stanley-stmt81243-110pc-multi-tools-set-2851777651412.html
+38,female,30,40,mother's day,mother,spa,relaxation,spa gift basket,spa gift basket,4,https://salesbetov.best/product_details/26495812.html
+39,male,30,40,anniversary,husband,home improvement,cooking,grill set,grill set,4,https://www.flipkart.com/squaro-online-store-barbecuebasketfoldableforroastbbqportablegrillingbasketwithwoodhandle-charcoal-grill/p/itm5ff13b83360a9
+40,female,30,40,anniversary,wife,home decor,spa,candles,candles,4,https://www.amazon.in/Floryn-Votive-Glass-Decoration-Fragrance/dp/B09NHDF5R7?th=1
+41,male,30,40,birthday,boss,business,luxury items,pen set,pen set,4,https://www.amazon.in/Cello-Geltech-Fun-Glitter-Gel/dp/B01N9K57IU
+42,female,30,40,birthday,boss,luxury items,business,scarf,scarf,4,https://www.myntra.com/scarves/silkland/silk-land-women-printed-scarf/23871430/buy
+43,male,30,40,valentine's day,husband,whiskey,chocolate,cufflinks,cufflinks,4,https://www.azga.in/products/morrocon-cufflinks-black
+44,female,30,40,valentine's day,wife,jewelry,chocolate,flowers,flowers,4,https://www.amazon.in/FloralMart%C2%AE-Mothers-Special-Cellophane-Wrapping/dp/B09123CFDY?th=1
+45,male,30,40,birthday,father,travel,reading,book set,book set,4,https://www.flipkart.com/harry-potter-box-set-complete-collection-children-s-paperback/p/itma23355d0b5e66
+46,female,30,40,birthday,mother,gardening,cooking,kitchen appliances,kitchen appliances,4,https://in.pinterest.com/pin/669347563389188883/
+47,male,30,40,father's day,father,tools,diy,tool set,tool set,4,https://shop.hpalloy.in/product/socket-sets-12-7mm-1-2-square-drive-8/
+48,female,30,40,mother's day,mother,spa,relaxation,spa gift basket,spa gift basket,4,https://blissfulbalance.com/signature-spa-gift-basket/
+49,male,30,40,anniversary,husband,home improvement,cooking,grill set,grill set,4,https://www.flipkart.com/kgf-charcoal-barbeque-grill-set-home-garden-standard-size-elegant-look-rib-roaster/p/itma8d6e897ec016
+50,female,30,40,anniversary,wife,home decor,spa,candles,candles,4,https://www.homecentre.in/in/en/Decor/Fragrance/Candles/HOMECENTRE-Colour-Refresh-Lavender-Scented-Pillar-Candle/p/1000013707152
+51,male,40,50,christmas,colleague,business,networking,desk organizer,desk organizer,5,https://www.amazon.in/TOVIXY-Organizer-Pencil-Stationary-Organizers/dp/B0CL32N9VC
+52,female,40,50,christmas,colleague,wellness,yoga,yoga mat,yoga mat,5,https://www.flipkart.com/beautiful-home-anti-skid-yoga-mat-4mm-exercise-mats-gym-workout-fitness-men-women-multicolor-4-mm/p/itmf7690ac7648b6
+53,male,40,50,birthday,uncle,wine,cooking,wine set,wine set,5,https://abrazo.in/products/abrazo-wine-set-leatherette-box-barset-bar-tool-set-wine
+54,female,40,50,birthday,aunt,perfume,fashion,perfume set,perfume set,5,https://bellavitaorganic.com/products/luxury-perfumes-gift-set-for-women-4x20-ml
+55,male,40,50,birthday,husband,tech,home audio,speakers,speakers,5,https://www.amazon.in/Audioengine-A2-Wireless-Bluetooth-Amplifier/dp/B07MYV2527?th=1
+56,female,40,50,birthday,wife,jewelry,perfume,braclet,braclet,5,https://www.caratlane.com/jewellery/mehry-diamond-bracelet-jt02458-1rp900.html
+57,male,40,50,birthday,neighbor,gardening,home decor,wind chimes,wind chimes,5,https://www.amazon.in/Hanging-Decorative-Decoration-Balcony-Windchime/dp/B0D3PLQQS1?th=1
+58,female,40,50,birthday,neighbor,baking,crafts,baking supplies,baking supplies,5,https://www.amazon.in/Decorating-Supplies-Springform-Turntable-Beginners/dp/B07NJBKTXW
+59,male,40,50,valentine's day,partner,wine,chocolate,watch,watch,5,https://www.carlington.in/products/carlington-silver-analog-watchct-2014-silver
+60,female,40,50,valentine's day,partner,chocolate,spa,choclate box,choclate box,5,https://www.flipkart.com/winni-celebrate-relations-chocolate-24-pcs-gift-pack-box-birthday-anniversary-truffles/p/itm2039b2c136b4e
+61,male,40,50,christmas,colleague,business,networking,desk organizer,desk organizer,5,https://www.amazon.in/OTISTORES-Organizer-Accessories-Compartments-Organization/dp/B0D6HHNB59?th=1
+62,female,40,50,christmas,colleague,wellness,yoga,yoga mat,yoga mat,5,https://www.amazon.in/Marjar-Exercise-Friendly-Anti-Tear-Carrying/dp/B08XYVQHM7
+63,male,40,50,birthday,uncle,wine,cooking,wine set,wine set,5,https://abrazo.in/products/abrazo-wine-set-leatherette-box-barset-bar-tool-set-black
+64,female,40,50,birthday,aunt,perfume,fashion,perfume set,perfume set,5,https://mamaearth.in/product/mamaearth-eau-de-parfum-set-of-4
+65,male,40,50,birthday,husband,tech,home audio,speakers,speakers,5,https://www.sony.co.in/electronics/home-cinema-speakers-audio/sa-d40
+66,female,40,50,birthday,wife,jewelry,perfume,earrings,earrings,5,https://www.theshoppingtree.in/products/preet-chandbali-earrings-golden
+67,male,50,60,retirement,friend,fishing,golf,fishing rod,fishing rod,4,https://www.amazon.in/2-1m-Portable-Fishing-Fiber-Telescopic/dp/B0CVQ8T5BJ
+68,female,50,60,retirement,friend,crafts,knitting,knitting kit,knitting kit,4,https://www.amazon.in/CraftLab-Knitting-Beginners-Adults-Supplies/dp/B096N2Q2YV
+69,male,50,60,anniversary,father,gardening,reading,gardening tools,gardening tools,4,https://www.flipkart.com/jetfire-10-pcs-gardening-tools-set-home-quality-work-kit-cultivator-hand-rack-weeder-trowel-pruner-garden-tool/p/itm85cc77d9a69bd
+70,female,50,60,anniversary,mother,jewelry,crafts,jewelry box,jewelry box,4,https://pataaree.com/products/brocade-jewellery-box
+71,male,50,60,birthday,husband,golf,travel,golf clubs,golf clubs,4,https://villadelpalmarloreto.com/blog/golf/what-golf-clubs-to-use-for-each-shot
+72,female,50,60,birthday,wife,gardening,knitting,plants,plants,4,https://nurserylive.com/collections/flowering-plants
+73,male,50,60,birthday,mentor,books,history,biography,biography,2,https://www.flipkart.com/dr-a-p-j-abdul-kalam-biography-saintly-scientist/p/itmet5get2y6tagg
+74,female,50,60,birthday,mentor,art,books,art book,art book,4,https://www.nytimes.com/2022/12/15/arts/design/best-art-books-2022.html
+75,male,50,60,retirement,friend,fishing,golf,fishing rod,fishing rod,2,https://www.networldsports.in/atlas-fishing-rod-reel-line-combos+optional_extra_one-10ft~Fishing~Rod+goal_weights-325lb
+76,female,50,60,retirement,friend,crafts,painting,paint tool kit,paint tool kit,2,https://www.flipkart.com/kamal-artist-quality-essential-painting-tool-kit-knife-roller-watercolor-acrylic-oil/p/itma99960bfa4058
+77,male,50,60,anniversary,father,gardening,reading,gardening tools,gardening tools,2,https://www.amazon.in/Robustt-Gardening-Tools-Home-Garden/dp/B0D9KFT68F?th=1
+78,female,50,60,anniversary,mother,jewelry,crafts,jewelry box,jewelry box,3,https://www.amazon.in/Citaaz-Jewellery-Organizer-Necklaces-Girlfriend/dp/B09RV9K364
+79,male,50,60,birthday,husband,golf,travel,golf clubs,golf clubs,3,https://www.performancegolf.com/blog/the-ultimate-beginners-guide-to-golf-club-sets
+80,female,50,60,birthday,wife,gardening,knitting,garden tools,garden tools,3,https://www.flipkart.com/nexshop-gardening-tools-kit-hand-cultivator-small-trowel-garden-fork-set-3-tool/p/itm3fba5e67b00d3
+81,male,60,80,birthday,grandfather,history,woodworking,wooden chess set,wooden chess set,3,https://www.amazon.in/Mimi-FunZone-Wooden-Folding-Pieces/dp/B08KQF5M82
+82,female,60,80,birthday,grandmother,gardening,baking,baking set,baking set,3,https://www.shopsy.in/cake-making-materials-combo-set-mould-baking-tools-round-easy-rotate-table-nozzle-3-scrapper-spatula-brush-kitchen-tool/p/itm84c1cf0e957e3?pid=XKTGR87F273XVG4A
+83,male,60,80,christmas,grandson,books,model building,model airplane,model airplane,4,https://www.spokesman.com/stories/2022/apr/06/pandemic-project-pilot-revives-childhood-hobby-of-/
+84,female,60,80,christmas,granddaughter,painting,music,art supplies,art supplies,3,https://www.amazon.in/PLUSPOINT-Supplies-Painting-Astronaut-Coloring/dp/B0DB2GKRS6
+85,male,60,80,anniversary,grandfather,fishing,reading,book collection,book collection,2,https://www.indiamart.com/proddetail/old-collection-of-books-26734423988.html
+86,female,60,80,anniversary,grandmother,cooking,crafts,microwave,microwave,1,https://www.lg.com/in/microwave-ovens/convection-microwave/mc2886brum/
+87,male,60,80,birthday,grandfather,history,woodworking,wooden chess set,wooden chess set,2,https://enterro.in/de/products/21-golden-rosewood-wooden-chess-set-square-55-mm-golden-rosewood-and-maple-wood-classic-staunton-chess-pieces-made-of-pure-ebony-and-boxwood-king-size-3-9
+88,female,60,80,birthday,grandmother,gardening,baking,baking set,baking set,3,https://www.ubuy.co.in/product/6WRN9DP6-mck-complete-cake-baking-set-bakery-tools-for-beginner-adults-baking-sheets-bakeware-sets-baking-too
+89,male,60,80,christmas,grandson,books,model building,model airplane,model airplane,3,https://www.amazon.in/Sky-Trek-Airplanes-Airplane-Collection/dp/B0CRKGGKGJ
+90,female,60,80,christmas,granddaughter,painting,music,art supplies,art supplies,2,https://www.ubuy.co.in/product/5B9G2XMR2-art-supplies-146-piece-deluxe-wooden-art-set-crafts-painting-kit-with-2-sketch-pads-includes-crayons-colored-pencils-oil-pastels-creative-gift
+91,male,60,80,anniversary,grandfather,fishing,reading,book collection,book collection,2,https://www.shutterstock.com/image-photo/collection-old-books-on-background-1194464821
+92,female,60,80,anniversary,grandmother,baking,crafts,sewing kit,sewing kit,2,https://www.ubuy.co.in/product/2EM8F506-sewing-kit-200-pcs-premium-sewing-supplies-41-xl-thread-spools-anti-scratch-durable-oxford-sewing-kit
