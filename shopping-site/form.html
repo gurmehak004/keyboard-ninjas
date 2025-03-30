@@ -69,9 +69,9 @@
         }
 
         .error-message {
-          color: red;
-          font-size: 0.9em;
-          margin-top: 5px;
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -80,91 +80,119 @@
         <h2>Get your loved ones, the perfect gift</h2>
         <form id="websiteForm">
             <div class="form-group">
-                <label for="name">Gender:</label>
-                <input type="text" id="name" name="name" required>
-                <div class="error-message" id="nameError"></div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Unisex">Unisex</option>
+                </select>
+                <div class="error-message" id="genderError"></div>
             </div>
             <div class="form-group">
-                <label for="email">Age:</label>
-                <input type="email" id="email" name="email" required>
-                <div class="error-message" id="emailError"></div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                <div class="error-message" id="ageError"></div>
             </div>
             <div class="form-group">
-                <label for="email">Relationship:</label>
-                <input type="email" id="email" name="email" required>
-                <div class="error-message" id="emailError"></div>
+                <label for="relationship">Relationship:</label>
+                <input type="text" id="relationship" name="relationship" required>
+                <div class="error-message" id="relationshipError"></div>
             </div>
             <div class="form-group">
-                <label for="email">Occassion:</label>
-                <input type="email" id="email" name="email" required>
-                <div class="error-message" id="emailError"></div>
+                <label for="occasion">Occasion:</label>
+                <input type="text" id="occasion" name="occasion" required>
+                <div class="error-message" id="occasionError"></div>
             </div>
             <div class="form-group">
-                <label for="email">Hobbies:</label>
-                <input type="email" id="email" name="email" required>
-                <div class="error-message" id="emailError"></div>
+                <label for="hobby">Hobbies:</label>
+                <input type="text" id="hobby" name="hobby" required>
+                <div class="error-message" id="hobbyError"></div>
             </div>
-           
-            
             <div class="form-group">
-                <button type="submit">Submit</button>
+                <button type="button" onclick="submitForm()">Submit</button>
             </div>
         </form>
+        <div id="recommendations"></div>
     </div>
 
     <script>
-        document.getElementById('websiteForm').addEventListener('submit', function(event) {
+        function submitForm() {
             let isValid = true;
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            const nameError = document.getElementById('nameError');
-            const emailError = document.getElementById('emailError');
-            const messageError = document.getElementById('messageError');
+            const gender = document.getElementById('gender').value;
+            const age = document.getElementById('age').value;
+            const relationship = document.getElementById('relationship').value;
+            const occasion = document.getElementById('occasion').value;
+            const hobby = document.getElementById('hobby').value;
 
-            nameError.textContent = '';
-            emailError.textContent = '';
-            messageError.textContent = '';
+            const genderError = document.getElementById('genderError');
+            const ageError = document.getElementById('ageError');
+            const relationshipError = document.getElementById('relationshipError');
+            const occasionError = document.getElementById('occasionError');
+            const hobbyError = document.getElementById('hobbyError');
 
-            if (!name) {
-                nameError.textContent = 'Name is required.';
+            genderError.textContent = '';
+            ageError.textContent = '';
+            relationshipError.textContent = '';
+            occasionError.textContent = '';
+            hobbyError.textContent = '';
+
+            if (!gender) {
+                genderError.textContent = 'Gender is required.';
+                isValid = false;
+            }
+            if (!age) {
+                ageError.textContent = 'Age is required.';
+                isValid = false;
+            }
+            if (!relationship) {
+                relationshipError.textContent = 'Relationship is required.';
+                isValid = false;
+            }
+            if (!occasion) {
+                occasionError.textContent = 'Occasion is required.';
+                isValid = false;
+            }
+            if (!hobby) {
+                hobbyError.textContent = 'Hobby is required.';
                 isValid = false;
             }
 
-            if (!email) {
-                emailError.textContent = 'Email is required.';
-                isValid = false;
-            } else if (!/\S+@\S+\.\S+/.test(email)) {
-                emailError.textContent = 'Invalid email format.';
-                isValid = false;
-            }
-
-            if (!message) {
-                messageError.textContent = 'Message is required.';
-                isValid = false;
-            }
-
-            if (!isValid) {
-                event.preventDefault(); // Prevent form submission if there are errors
-            } else {
-                // Form is valid, you can proceed with submission (e.g., using fetch)
-                console.log('Form submitted successfully!');
-                // Example using fetch:
-                /*
-                fetch('/your-backend-endpoint', {
+            if (isValid) {
+                fetch('http://127.0.0.1:5000/recommend', {
                     method: 'POST',
-                    body: new FormData(this),
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ gender, age: parseInt(age), relationship, occasion, hobby }),
                 })
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Success:', data);
+                    displayRecommendations(data);
                 })
                 .catch(error => {
                     console.error('Error:', error);
+                    document.getElementById('recommendations').innerHTML = '<p>Error fetching recommendations.</p>';
                 });
-                */
             }
-        });
+        }
+
+        function displayRecommendations(recommendations) {
+            const recommendationsDiv = document.getElementById('recommendations');
+            recommendationsDiv.innerHTML = '<h2>Recommended Gifts:</h2>';
+
+            if (recommendations.length > 0) {
+                recommendations.forEach(gift => {
+                    recommendationsDiv.innerHTML += `
+                        <p><strong>Gift:</strong> ${gift.gift}</p>
+                        <p><strong>Predicted Rating:</strong> ${gift.predicted_rating}</p>
+                        <p><a href="${gift.link}" target="_blank">Link</a></p>
+                        <hr>
+                    `;
+                });
+            } else {
+                recommendationsDiv.innerHTML += '<p>No recommendations found.</p>';
+            }
+        }
     </script>
 </body>
 </html>
