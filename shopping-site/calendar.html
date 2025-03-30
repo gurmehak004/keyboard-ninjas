@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gift Reminder Calendar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" />
+    <style>
+        #calendar {
+            width: 80%;
+            margin: 20px auto;
+        }
+        #reminder-form {
+            width: 80%;
+            margin: 20px auto;
+        }
+        #reminder-list {
+            width: 80%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="calendar"></div>
+
+    <div id="reminder-form">
+        <h2>Add Reminder</h2>
+        <label for="recipient">Recipient:</label>
+        <input type="text" id="recipient" /><br />
+
+        <label for="reminderDate">Date and Time:</label>
+        <input type="datetime-local" id="reminderDate" /><br />
+
+        <label for="message">Message:</label>
+        <textarea id="message"></textarea><br />
+
+        <button id="addReminderBtn">Add Reminder</button>
+    </div>
+
+    <div id="reminder-list">
+        <h2>Upcoming Reminders</h2>
+        <ul id="reminders"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const calendarEl = document.getElementById('calendar');
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: [], // Events will be added dynamically
+            });
+            calendar.render();
+
+            const addReminderBtn = document.getElementById('addReminderBtn');
+            const remindersList = document.getElementById('reminders');
+
+            addReminderBtn.addEventListener('click', function () {
+                const recipient = document.getElementById('recipient').value;
+                const reminderDate = document.getElementById('reminderDate').value;
+                const message = document.getElementById('message').value;
+
+                fetch('/reminders', { // Replace with your backend API endpoint
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        recipient: recipient,
+                        reminder_date: reminderDate,
+                        message: message,
+                        // Add userId, giftId, and recurring information here if necessary
+                    }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Update calendar and reminder list
+                    fetchReminders();
+                    document.getElementById('recipient').value = '';
+                    document.getElementById('reminderDate').value = '';
+                    document.getElementById('message').value = '';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Failed to add reminder.');
+                });
+            });
+
+            function fetchReminders() {
+                fetch('/reminders?user_id=123') // Replace 123 with actual user ID
+                    .then(response => response.json())
+                    .then(data => {
+                        remindersList.innerHTML = '';
+                        calendar.removeAllEvents();
+                        data.forEach(reminder => {
+                            const li = document.createElement('li');
+                            li.textContent = `${reminder.recipient} - ${reminder.message} - ${reminder.reminder_date}`;
+                            remindersList.appendChild(li);
+
+                            calendar.addEvent({
+                                title: `${reminder.recipient} - ${reminder.message}`,
+                                start: reminder.reminder_date,
+                            });
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Failed to fetch reminders.');
+                    });
+            }
+
+            fetchReminders(); // Initial fetch
+        });
+    </script>
+</body>
+</html>

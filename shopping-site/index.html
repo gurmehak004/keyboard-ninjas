@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G&G</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="gallery/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/all.css">
+</head>
+
+<body>
+  <!------------------------------------------------------Header---------------------------------------------------->
+  
+    <div id="calendar"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" style="max-height:70px;z-index:10;">
+    <a class="navbar-brand" href="#"><span id="bd-title"><img src="gallery/G&G.jpg"
+          style="max-height:100px;">G&G</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navdp" aria-controls="navdp"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-white" style="width:100%;" id="navdp">
+      <form class="form-inline bg-white  my-2 my-lg-0 mrl">
+        <input class="form-control mr-sm-2 srh-w bg-white" style="width:500px;" type="search "
+          placeholder="Search for gifts" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <button type="button" class="btn btn-danger reg1">Sign In</button>
+      <button type="button" class="btn btn-info reg2"><i class="fas fa-shopping-cart"> Cart</i>
+        &nbsp;<span class="badge badge-light">0</span>
+      </button>
+    </div>
+  </nav>
+  <nav class="nav2">
+    <ul class="ul2">
+      <li id="one"><a href="birthday.html">Birthdays</a></li>
+      <li id="two"><a href="anniversery.html">Anniversary</a></li>
+      <li id="three"><a href="valentine.html">Valentine's</a></li>
+      <li id="four"><a href="engagement.html">Engagement</a></li>
+      <li id="five"><a href="retirement.html">Retirement </a></li>
+      <li id="six"><a href="festivals.html">Festivals</a></li>
+      <li id="seven"><a href="marriage.html">Marriage</a></li>
+      <li id="eight"><a href="calendar.html" style="color: red;"> Reminder
+
+
+      </a></li>
+      <li id="eight"><a href="form.html" id="open-chatbot-button">Open Gift Chatbot</a>
+        
+        <!-- <div id="chat-messages"></div>       </a></li>
+      <li id="eight"><a href="form.html">     Open Chatbot   </a></li> -->
+      <li id="eight"><a href="#">        </a></li>
+      <li id="nine"><a href="#" style="color:cornflowerblue; height: 100px ; font-weight: 800;"><b> Ginie</b></a></li>
+    </ul>
+  </nav>
+  <!------------------------------------------------------Header---------------------------------------------------->
+
+  <!------------------------------------------------------Carousel---------------------------------------------------->
+  <div id="carousel1" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel1" data-slide-to="1"></li>
+      <li data-target="#carousel1" data-slide-to="2"></li>
+      <li data-target="#carousel1" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active"  >
+        <img src="gallery\welcome.jpg" class="d-block  img-fluid" alt="1" style="width: 100%;height: 500px;">
+      </div>
+      <div class="carousel-item">
+        <img src="gallery\back.jpg" class="d-block img-fluid" alt="2" style="width: 100%;height: 500px;">
+      </div>
+      <div class="carousel-item">
+        <img src="gallery/fest.jpg" class="d-block img-fluid" alt="3" style="width: 100%;height: 500px;">
+      </div>
+      <div class="carousel-item">
+        <img src="gallery\val.jpg" class="d-block w-100 img-fluid" alt="4" style="width: 100%;height: 500px;">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!------------------------------------------------------Carousel---------------------------------------------------->
+
+  <!------------------------------------------------------Cards---------------------------------------------------->
+  <div class="container-fluid pt-2 pb-2" style="background-color:#F0FFFF; border-bottom:1px solid darkgray;">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="inm" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                      <img src="gallery/pro2.jpg" class="img-fluid" alt="card1">
+                      <div class="card-body">
+                        <h4 class="card-title">Dancing Shoes</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <button class="btn btn-warning" type="button">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 mm">
+                    <div class="card">
+                      <img src="gallery/pro3.jpg" class="img-fluid" alt="card1">
+                      <div class="card-body">
+                        <h4 class="card-title">Accessories</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <button class="btn btn-warning" type="button">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 mm">
+                    <div class="card">
+                      <img src="gallery/pro1.jpg" class="img-fluid" alt="card1">
+                      <div class="card-body">
+                        <h4 class="card-title">Male Hamper</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <button class="btn btn-warning" type="button">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 mm">
+                    <div class="card">
+                      <img src="gallery/pro4.jpg" class="img-fluid" alt="card1">
+                      <div class="card-body">
+                        <h4 class="card-title">Female Hamper</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <button class="btn btn-warning" type="button">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                      <img src="gallery/pro5.jpg" class="img-fluid" alt="card1">
+                      <div class="card-body">
+                        <h4 class="card-title">Skincare</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <button class="btn btn-warning" type="button">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                      <img src="gallery/pro6.jpg" class="img-fluid" alt="card1">
+                      <div class="card-body">
+                        <h4 class="card-title">Sapplings</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <button class="btn btn-warning" type="button">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                      <img src="gallery/11.jpg" class="img-fluid" alt="card1">
+                      <div class="card-body">
+                        <h4 class="card-title">Sented Candles</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem epson   </p>
+                        <button class="btn btn-warning" type="button">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                      <img src="gallery/pro9.jpg" class="img-fluid" alt="card1">
+                      <div class="card-body">
+                        <h4 class="card-title">Tool kit</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem epson </p>
+                        <button class="btn btn-warning" type="button">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <a class="carousel-control-prev" style="margin-left:20px; width:50px;" href="#inm" role="button"
+            data-slide="prev">
+            <span class="carousel-control-prev-icon card-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" style="margin-right:20px; width:50px;" href="#inm" role="button"
+            data-slide="next">
+            <span class="carousel-control-next-icon card-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------------------Cards---------------------------------------------------->
+
+  <!------------------------------------------------------Banner---------------------------------------------------->
+  <div>
+    <a class="banner-link" href="#"><img src="gallery/extra.jpg" alt="mens-wear-banner" class="image-fluid"
+        style="width:100%; height:399px; border-bottom:1px solid darkgray;"></a>
+  </div>
+
+  <!------------------------------------------------------Banner---------------------------------------------------->
+
+  <!------------------------------------------------------Card2---------------------------------------------------->
+  <div class="container-fluid" style="background-color:#F0F8FF; border-bottom:1px solid darkgray; overflow:hidden;">
+    <div class="row mb-3">
+      <div class="col-sm-12 ">
+        <h4 class="cd-h4 mt-3 mb-3">Our Collections</h4>
+        <div class="card-group">
+          <div class="card col-sm-4 col-lg-2 card2sty">
+            <img src="gallery/12.jpg" style="margin:5px; max-height:200px; max-width:200px;" alt="lap1"
+              class="image-fluid">
+            <div class="card-body cd-txt">
+              <h4 class="card-title">Pen Set</h4>
+              <p class="card-text txt-sz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nihil.</p>
+              <a href="#" class="btn btn-warning bb-btn">Buy</a>
+            </div>
+          </div>
+          <div class="card col-sm-4 col-lg-2 card2sty">
+            <img src="gallery/13.jpg" style="margin:5px; max-height:200px; max-width:200px;" alt="lap2"
+              class="image-fluid">
+            <div class="card-body cd-txt">
+              <h4 class="card-title">Magic Pencils</h4>
+              <p class="card-text txt-sz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nihil.</p>
+              <a href="#" class="btn btn-warning bb-btn">Buy</a>
+            </div>
+          </div>
+          <div class="card col-sm-4 col-lg-2 card2sty">
+            <img src="gallery/14.jpg" style="margin:5px; max-height:200px; max-width:200px;" alt="lap3"
+              class="image-fluid">
+            <div class="card-body cd-txt">
+              <h4 class="card-title">Croche Roses</h4>
+              <p class="card-text txt-sz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nihil.</p>
+              <a href="#" class="btn btn-warning bb-btn">Buy</a>
+            </div>
+          </div>
+          <div class="card col-sm-4 col-lg-2 card2sty">
+            <img src="gallery/15.jpg" style="margin:5px; max-height:200px; max-width:200px;" alt="lap4"
+              class="image-fluid">
+            <div class="card-body cd-txt">
+              <h4 class="card-title">Games</h4>
+              <p class="card-text txt-sz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nihil.</p>
+              <a href="#" class="btn btn-warning bb-btn">Buy</a>
+            </div>
+          </div>
+          <div class="card col-sm-4 col-lg-2 card2sty">
+            <img src="gallery/16.jpg" style="margin:5px; max-height:200px; max-width:200px;" alt="lap5"
+              class="image-fluid">
+            <div class="card-body cd-txt">
+              <h4 class="card-title"> Kid games</h4>
+              <p class="card-text txt-sz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nihil.</p>
+              <a href="#" class="btn btn-warning bb-btn">Buy</a>
+            </div>
+          </div>
+          <div class="card col-sm-4 col-lg-2 card2sty">
+            <img src="gallery/17.jpg" style="margin:5px; max-height:200px; max-width:200px;" alt="lap2"
+              class="image-fluid">
+            <div class="card-body cd-txt">
+              <h4 class="card-title"> Remote Controls </h4>
+              <p class="card-text txt-sz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nihil.</p>
+              <a href="#" class="btn btn-warning bb-btn">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------Card2---------------------------------------------------->
+
+  <!------------------------------------------------------Mobiles---------------------------------------------------->
+  <div class="container-fluid" style="background-color:#F0F8FF; border-bottom:1px solid darkgray; overflow:hidden;">
+    <h4 class="cd-h4 mt-2 mb-2">Unique Collection</h4>
+    <div class="row">
+      <img src="gallery/18.jpg" class=" mt-2 mb-2 col-6 col-sm-4 col-lg-3 image-fluid"
+        onclick="window.location.assign('https://www.google.com')">
+      <img src="gallery/h2.jpg" class=" mt-2 mb-2 col-6 col-sm-4 col-lg-3 image-fluid"
+        onclick="window.location.assign('https://www.google.com')">
+      <img src="gallery/t.jpg" class=" mt-2 mb-2 col-6 col-sm-4 col-lg-3 image-fluid"
+        onclick="window.location.assign('https://www.google.com')">
+      <img src="gallery/val.jpg" class=" mt-2 mb-2 col-6 col-sm-4 col-lg-3 image-fluid"
+        onclick="window.location.assign('https://www.google.com')">
+    </div>
+  </div>
+  <!------------------------------------------------------Mobiles---------------------------------------------------->
+
+  <!------------------------------------------------------Footer---------------------------------------------------->
+  <footer class="footdes">
+    <div class="container-fluid footer-1">
+      <div class="row">
+        <div class="col-sm-4 foocol">
+          <h4 class="text-white fh4">About Us</h4>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero assumenda laudantium,
+            quos alias obcaecati velit beatae culpa est officia facere, fugiat, voluptate dignissimos tempore. Ab,
+            perspiciatis ut, facere culpa dignissimos in qui aliquam voluptate, animi quidem ea sequi blanditiis totam
+            iste nesciunt est. Quaerat maxime accusantium, itaque iusto incidunt eum? </p>
+        </div>
+        <div class="col-sm-4 foocol">
+          <h4 class="text-white fh4">Categories</h4>
+          <i class="fas fa-tv text-white"> <a href="electronics.html"
+              style="text-decoration: none; list-style:none; display:inline-block;">Electronics</a></i> <br />
+          <i class="fas fa-mobile text-white"> <a href="mobiles.html"
+              style="text-decoration: none; list-style:none; display:inline-block;">Mobiles</a></i> <br />
+          <i class="fas fa-laptop text-white"> <a href="laptops.html"
+              style="text-decoration: none; list-style:none; display:inline-block;">Computers & Laptops</a></i> <br />
+          <i class="fas fa-utensils text-white"> <a href="#"
+              style="text-decoration: none; list-style:none; display:inline-block;">Kitchen Tools</a></i> <br />
+          <i class="fas fa-book text-white"> <a href="#"
+              style="text-decoration: none; list-style:none; display:inline-block;">Books</a></i> <br />
+          <i class="fas fa-tshirt text-white"> <a href="#"
+              style="text-decoration: none; list-style:none; display:inline-block;">Fashion Wear</a></i> <br />
+          <i class="fas fa-running text-white"> <a href="#"
+              style="text-decoration: none; list-style:none; display:inline-block;">Sports</a></i> <br />
+          <i class="fas fa-rupee-sign text-white"> <a href="#"
+              style="text-decoration: none; list-style:none; display:inline-block;">Recharge</a></i> <br />
+          <i class="fas fa-gift text-white"> <a href="#"
+              style="text-decoration: none; list-style:none; display:inline-block;">Offer Zone</a></i> <br />
+        </div>
+        <div class="col-sm-4 foocol">
+          <h4 class="text-white fh4">Contact Us</h4>
+          <span style="color:antiquewhite; text-transform:uppercase;">Address:</span><span class="text-white"> Eshop ,
+            Omni towers ,Nizamabad,Telangana</span><br />
+          <i class="fas fa-envelope text-white"></i> <span
+            style="color:antiquewhite; text-transform:uppercase;">Mail:</span><span class="text-white"
+            style="overflow-wrap: break-word;"> developer.vishu@threadsec.com</span><br />
+          <i class="fas fa-phone-alt text-white"></i> <span
+            style="color:antiquewhite; text-transform:uppercase;">Telephone:</span><span class="text-white">
+            (+91)8074786868</span> <br />
+          <br />
+          <br />
+          <pc class="text-white">For any quries please contact us via <a
+              href="mailto:developer.koushil@eshop.com">mail</a> or phone.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer-2 col-sm foocol-2">
+          <div class="footer-2-div">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook text-white"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter text-white"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in text-white"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram text-white"></i></a>
+            <a class="text-white" style="float:right; margin-right:05px;">&copy;2020 Eshop Developed by <b>Vishal
+                Arora</b></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!------------------------------------------------------Footer---------------------------------------------------->
+
+  <script> 
+//   const openChatbotButton = document.getElementById('open-chatbot-button');
+// const chatbotModal = document.getElementById('chatbot-modal');
+// const sendProfileButton = document.getElementById('send-profile-button');
+// const closeChatbotButton = document.getElementById('close-chatbot-button');
+// const chatMessages = document.getElementById('chat-messages');
+
+// openChatbotButton.addEventListener('click', () => {
+//     chatbotModal.style.display = 'block'; // Or use Bootstrap modal methods
+// });
+
+// closeChatbotButton.addEventListener('click', () => {
+//     chatbotModal.style.display = 'none'; // Or use Bootstrap modal methods
+// });
+
+// sendProfileButton.addEventListener('click', () => {
+//     const gender = document.getElementById('gender').value;
+//     const hobby = document.getElementById('hobby').value;
+//     const relation = document.getElementById('relation').value;
+//     const occasion = document.getElementById('occasion').value;
+//     const age = document.getElementById('age').value;
+
+//     const userProfile = {
+//         gender: gender,
+//         hobby: hobby,
+//         relationship: relation,
+//         occasion: occasion,
+//         age: parseInt(age) // Ensure age is an integer
+//     };
+
+//     fetch('YOUR_NGROK_URL/recommend', { // Replace with your ngrok url
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(userProfile),
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         // Process the API response
+//         if (data && data.length > 0) {
+//             data.forEach(gift => {
+//                 addMessage(`Recommendation: ${gift.gift}`, 'Bot');
+//             });
+//         } else if (data.error) {
+//             addMessage(`Error: ${data.error}`, 'Bot');
+//         } else {
+//             addMessage("No recommendations found.", "Bot");
+//         }
+//     })
+//     .catch(error => {
+//         addMessage(`Error: ${error}`, 'Bot');
+//     });
+
+//     chatbotModal.style.display = 'none'; // Close the modal after sending
+// });
+
+// function addMessage(message, sender) {
+//     const messageDiv = document.createElement('div');
+//     messageDiv.textContent = `${sender}: ${message}`;
+//     chatMessages.appendChild(messageDiv);
+// }
+document.getElementById('open-chatbot-button').addEventListener('click', function() {
+            // Replace 'another_page.html' with the actual URL or file path of the page you want to open.
+            window.open('form.html', '_self')} );
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script> </script>
+</body>
+
+</html>
